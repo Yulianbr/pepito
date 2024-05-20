@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="Media/favicon.ico">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="Css/Tetris2j.css">
+</head>
+<body>
+
+<div class="Contenedor">
+    <img class="w-100 h-100 position-fixed top-0 start-0" src="Media/Blue-and-Pink-Futuristic-Dark-Mode-Technology-Pitch-Deck-Presentation-_1_.gif" alt="">
+
+    <div id="Estadisticas1">
+        <div class="jugador">
+            <div>Jugador </div>
+            <div class="NombreJ1"></div>
+        </div>
+        <div id="ContenedorPuntaje">
+            <p>Puntaje </p>
+            <div id="Puntaje">0</div>
+        </div>
+        <div id="ContenedorLineas">
+            <p>Lineas </p>
+            <div id="LineasEliminadas">0</div>
+        </div>
+        <div class="ContadorCronometro">
+            <p >Tiempo </p>
+            <div id="Contador">0:00</div>
+        </div>
+    </div>
+
+    <div class="Tablero" id="tablero"></div>
+    <div class="timer" id="countdown">5</div> 
+    <div class="Tablero2" id="tablero2"></div>
+
+    <div id="Estadisticas2">
+        <div class="jugador2">
+            <div>Jugador </div>
+            <div class="NombreJ2"></div>
+        </div>
+        <div id="ContenedorPuntaje2">
+            <p>Puntaje </p>
+            <div id="Puntaje2">0</div>
+        </div>
+        <div id="ContenedorLineas2">
+            <p>Lineas </p>
+            <div id="LineasEliminadas2">0</div>
+        </div>
+        <div class="ContadorCronometro2">
+            <p >Tiempo </p>
+            <div id="Contador2">0:00</div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="border: none;">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">PERDISTE </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+                    <p>Perdiste, no se puede generar otra ficha ✔✔</p>
+                </div>
+                <div class="modal-footer" style="border: none;">
+                    <a href="PAGINA.HTML" class="btn btn-primary">Volver inicio </a>
+                    <a href="Tetris2j.html" class="btn btn-secondary">Jugar de nuevo </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src="Media/Ficha.mp3" class="Ficha"></audio>
+    <script src="Js/Tetris2j.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
